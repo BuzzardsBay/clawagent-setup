@@ -1,0 +1,30 @@
+# Compiled installer output
+Output/
+
+# Bundled Ubuntu rootfs (sourced separately, too large for git)
+resources/ubuntu-rootfs.tar.gz
+
+# Inno Setup compiler artifacts
+*.~is
+
+# Windows
+Thumbs.db
+Desktop.ini
+*.lnk
+
+# Logs
+*.log
+logs/
+
+# Any accidentally dropped secrets
+.env
+*.pfx
+*.p12
+secrets/
+
+# Node (if any tooling is added)
+node_modules/
+
+# 2.4 MB schema dump from openclaw 2026.4.27 phase-3 investigation
+# (already covered by *.log above, listed explicitly for clarity)
+schema-investigation.log
